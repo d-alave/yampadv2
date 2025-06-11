@@ -19,15 +19,5 @@
                         &kp LCTRL        &kp LALT        &kp LSHIFT         &kp LC(Z) 
                     >;
                 };
-
-                layer_1 { 
-                    bindings = <
-                        &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2       &trans
-                        &out OUT_BLE       &out OUT_USB     &bt BT_CLR         &rgb_ug RGB_TOG
-                        &none              &none            &none
-                        &none              &none            &none              &none
-                        &none              &none            &none              &none
-                    >;
-                };
         };
 };
