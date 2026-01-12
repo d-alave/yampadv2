@@ -13,6 +13,6 @@
 #
 ---
 include:
-  - board: nicenano_v2
+  - board: nice_nano
     shield: yampad
     snippet: zmk-usb-logging
