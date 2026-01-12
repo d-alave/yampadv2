@@ -10,21 +10,43 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                    sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
                     bindings = <
-                        &kp N1       &kp N2       &kp N3       &mo 1
-                        &kp N4       &kp N5       &kp N6       &kp LC(Y) 
-                        &kp A        &kp T        &kp Y
-                        &kp G        &kp H        &kp Z        &kp X
-                        &kp LCTRL        &kp LALT        &kp LSHIFT         &kp LC(Z) 
+                        &kp ESCAPE       &kp B       &kp D       &kp L
+                        &kp        &kp S       &kp R       &kp LSHIFT 
+                        &kp E        &kp A        &kp Y
+                        &kp G        &kp X        &kp Z        &kp X
+                        &mo 1        &mo 2        &kp LALT         &kp LCTRL 
                     >;
                 };
 
                 layer_1 { 
+                    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                    bindings = <
+                        &kp BACKSPACE       &kp KP_DIVIDE       &kp KP_MULTIPLY       &kp KP_MINUS
+                        &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9       &kp KP_PLUS 
+                        &kp KP_NUMBER_4        &kp KP_NUMBER_5        &kp KP_NUMBER_6
+                        &kp KP_NUMBER_1        &kp KP_NUMBER_2        &kp KP_NUMBER_3        &kp KP_EQUAL
+                        &mo 1        &kp KP_DOT        &kp LALT         &kp KP_NUMBER_0 
+                    >;
+                };
+
+                layer_2 { 
                     sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
                     bindings = <
-                        &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2       &trans
-                        &out OUT_BLE       &out OUT_USB     &bt BT_CLR         &rgb_ug RGB_TOG
+                        &kp K_UNDO       &kp K_REDO       &kp KP_MULTIPLY       &kp KP_MINUS
+                        &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9       &kp KP_PLUS 
+                        &kp KP_NUMBER_4        &kp KP_NUMBER_5        &kp KP_NUMBER_6
+                        &kp KP_NUMBER_1        &kp KP_NUMBER_2        &kp KP_NUMBER_3        &kp KP_EQUAL
+                        &mo 1        &kp KP_DOT        &mo 3         &kp KP_NUMBER_0 
+                    >;
+                };
+
+                layer_3 { 
+                    sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+                    bindings = <
+                        &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2       &rgb_ug RGB_TOG
+                        &out OUT_BLE       &out OUT_USB     &bt BT_CLR         &none
                         &none              &none            &none
                         &none              &none            &none              &none
                         &none              &none            &none              &none
