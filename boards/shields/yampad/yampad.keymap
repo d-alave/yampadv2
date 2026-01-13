@@ -71,7 +71,7 @@
                 &kp LC(Z)        &kp LC(LS(Z))    &kp LS(TAB)      &kp F12
                 &kp F2           &kp F3           &kp H            &kp LC(S) 
                 &kp I            &kp TILDE        &grab_y
-                &grab_x          &grab_z          &kp KP_EQUAL     &default_view
+                &kp N            &grab_x          &grab_z          &default_view
                 &none            &mo 3            &kp ENTER        
             >;
         };
@@ -93,7 +93,7 @@
                 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none
                 &out OUT_BLE     &out OUT_USB     &bt BT_CLR       &none
                 &none            &none            &none
-                &none            &none            &none            &none
+                &none            &none            &none            &none    
                 &none            &none            &none            
             >;
         };
