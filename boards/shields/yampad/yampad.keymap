@@ -8,7 +8,7 @@
         grab_x: grab_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <200>;
             tap-ms = <30>;
             bindings
                 = <&macro_tap &kp G>
@@ -19,7 +19,7 @@
         grab_y: grab_y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <200>;
             tap-ms = <30>;
             bindings
                 = <&macro_tap &kp G>
@@ -30,7 +30,7 @@
         grab_z: grab_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <200>;
             tap-ms = <30>;
             bindings
                 = <&macro_tap &kp G>
@@ -41,7 +41,7 @@
         default_view: default_view {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
+            wait-ms = <200>;
             tap-ms = <30>;
             bindings
                 = <&macro_tap &kp KP_N1>
