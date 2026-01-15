@@ -16,9 +16,9 @@
 	default_encoder: encoder {
 		compatible = "alps,ec11";
 		label = "default_encoder";
-		a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <20>;  // Changed from 10 to 18 for single triggers
+		a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		steps = <20>;
 		status = "okay";
 	};
 

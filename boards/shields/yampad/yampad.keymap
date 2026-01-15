@@ -55,40 +55,40 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;  // Zoom in/out
             bindings = <
                 &kp ESCAPE       &kp B       &kp D       &kp L
-                &kp TAB          &kp S       &kp R       &kp LSHIFT 
+                &kp TAB          &kp S       &kp R       &mo 2 
                 &kp E            &kp A       &kp Y
-                &kp G            &kp X       &kp Z       &kp LCTRL
-                &mo 1            &mo 2       &kp LALT     
+                &kp LSHIFT       &kp X       &kp Z       &mo 1
+                &kp LCTRL        &kp LALT    &kp G     
             >;
         };
 
         layer_1 { 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;  // Pan left/right
             bindings = <
                 &kp LC(Z)        &kp LC(LS(Z))    &kp LS(TAB)      &kp F12
-                &kp F2           &kp F3           &kp H            &kp LC(S) 
+                &kp F2           &kp F3           &kp H            &kp ENTER 
                 &kp I            &kp TILDE        &grab_y
-                &kp N            &grab_x          &grab_z          &default_view
-                &none            &mo 3            &kp ENTER        
+                &kp T            &grab_x          &grab_z          &none
+                &mo 3            &none            &kp N        
             >;
         };
 
         layer_2 { 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  // Volume up/down
             bindings = <
                 &kp BACKSPACE    &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS
-                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS 
+                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none 
                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
-                &mo 1            &kp KP_DOT       &mo 3             
+                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL
+                &kp KP_DOT       &kp KP_NUMBER_0  &kp KP_PLUS           
             >;
         };
 
         layer_3 { 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;  // Volume up/down
             bindings = <
                 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none
                 &out OUT_BLE     &out OUT_USB     &bt BT_CLR       &none
