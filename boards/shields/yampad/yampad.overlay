@@ -14,11 +14,11 @@
 	};
 
 	default_encoder: encoder {
-		compatible = "bourns,pec11";
+		compatible = "alps,ec11";
 		label = "default_encoder";
-		a-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  
-		b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
-		steps = <80>;
+		a-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+		b-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+		steps = <120>;
 		status = "okay";
 	};
 
