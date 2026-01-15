@@ -16,8 +16,8 @@
 	default_encoder: encoder {
 		compatible = "alps,ec11";
 		label = "default_encoder";
-		a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // F5
-		b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // F6
+		a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // F5
+		b-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // F6
 		steps = <80>;
 		status = "okay";
 	};
