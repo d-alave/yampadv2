@@ -8,17 +8,18 @@
 		zmk,encoder = &default_encoder;
 	};
 
-	sensors {
+	sensors: sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&default_encoder>;
+		triggers-per-rotation = <20>;
 	};
 
 	default_encoder: encoder {
 		compatible = "alps,ec11";
 		label = "default_encoder";
 		a-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    	b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <4>;
+		b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		steps = <80>;  // Official docs use 80 for EC11
 		status = "okay";
 	};
 
