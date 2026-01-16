@@ -55,7 +55,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DN>;  // Zoom in/out
+            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;  // Zoom in/out
             bindings = <
                 &kp ESCAPE       &kp B       &kp D       &kp L
                 &kp TAB          &kp S       &kp R       &mo 2 
