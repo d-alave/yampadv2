@@ -70,9 +70,9 @@
             bindings = <
                 &kp LC(Z)        &kp LC(LS(Z))    &kp LS(TAB)      &kp F12
                 &kp F2           &kp F3           &kp H            &kp ENTER 
-                &kp I            &kp TILDE        &grab_y
-                &kp T            &grab_x          &grab_z          &none
-                &mo 3            &none            &kp N            &none
+                &kp LC(C)        &kp LC(V)        &grab_y
+                &kp LSHIFT       &grab_x          &grab_z          &none
+                &kp LCTRL        &kp LALT         &mo 3            &none
             >;
         };
 
@@ -92,9 +92,9 @@
             bindings = <
                 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none
                 &out OUT_BLE     &out OUT_USB     &bt BT_CLR       &none
-                &none            &none            &none
-                &none            &none            &none            &none    
-                &none            &none            &none            &none
+                &kp T            &kp N            &kp TILDE
+                &kp LSHIFT       &kp I            &kp K            &none
+                &kp LCTRL        &kp LALT         &none            &none
             >;
         };
     };
