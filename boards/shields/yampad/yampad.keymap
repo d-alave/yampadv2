@@ -60,7 +60,7 @@
                 &kp ESCAPE       &kp B       &kp D       &kp L
                 &kp TAB          &kp S       &kp R       &mo 2 
                 &kp E            &kp A       &kp Y
-                &kp LSHIFT       &kp X       &kp Z       &kp W
+                &kp LSHIFT       &kp X       &kp Z       &none
                 &kp LCTRL        &kp LALT    &kp G       &mo 1
             >;
         };
@@ -72,7 +72,7 @@
                 &kp F2           &kp F3           &kp H            &kp ENTER 
                 &kp LC(C)        &kp LC(V)        &grab_y
                 &kp LSHIFT       &grab_x          &grab_z          &none
-                &kp LCTRL        &kp LALT         &mo 3            &none
+                &kp LCTRL        &kp LALT         &kp X            &none
             >;
         };
 
